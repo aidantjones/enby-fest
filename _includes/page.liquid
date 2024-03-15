@@ -15,6 +15,7 @@ title: Page
     <meta property="og:title" content="{{ title }}">
     {% include 'components/global-og' %}
     <meta property="og:description" content="{{ description }}">
+    <meta name="description" content="{{ description }}">
   </head>
   <body class="page-{{ title | slugify }} template-page">
     {%- include 'components/header' -%}

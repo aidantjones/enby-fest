@@ -1,3 +1,5 @@
+{% assign description = "ENBYFest is the first & only film festival focused soley on nonbinary representation." %}
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,7 +10,8 @@
     <link rel="stylesheet" href="/assets/styles/main.css">
     <meta property="og:title" content="ENBYfest - San Francisco Nonbinary Film Festival" />
     {% include 'components/global-og' %}
-    <meta property="og:description" content="ENBYFest is the first & only film festival focused soley on nonbinary representation." />
+    <meta property="og:description" content="{{ description }}" />
+    <meta name="description" content="{{ description }}">
 </head>
 <body class="page-index">
     {%- include 'components/header' -%}
