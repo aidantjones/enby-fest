@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>enbyfest</title>
+    <link rel="stylesheet" href="/assets/styles/water.css">
+    <link rel="stylesheet" href="/assets/styles/main.css">
+    <meta property="og:image" content="/assets/images/logo.png" />
+    <meta property="og:description" content="ENBYFest is the first & only film festival focused soley on nonbinary representation." />
+</head>
+<body class="page-index">
+    {%- include 'components/header' -%}
+    <main>
+        {%- include 'images/sun.svg' -%}
+        <nav class="display-font">
+            {{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
+        </nav>
+    </main>
+</body>
+</html>

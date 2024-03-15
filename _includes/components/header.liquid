@@ -1,0 +1,11 @@
+<header class="full-width">
+  <a href="/" class="logo">
+    <h1 aria-label="enby fest" class="max-width">enby&#8203;fest</h1>
+  </a>
+  <p>July 12-14 ~ San Francisco</p>
+  {% unless page.url == '/' %}
+    <nav>
+      {{ collections.all | eleventyNavigation | eleventyNavigationToHtml }}
+    </nav>
+  {% endunless %}
+</header>
