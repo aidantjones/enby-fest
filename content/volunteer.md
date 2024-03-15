@@ -20,7 +20,7 @@ eleventyNavigation:
     </label>
     <label class="required">
       <span>Email</span>
-      <input type="email" name="email" required />
+      <input type="email" autocomplete="email" name="email" required />
     </label>
   </div>
 

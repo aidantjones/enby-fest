@@ -5,20 +5,25 @@ description: How to submit to enbyfest
 eleventyNavigation:
   key: Submissions
 ---
-<form name="volunteer" method="POST" data-netlify="true">
+<form name="submissions" method="POST" data-netlify="true">
   <label class="required">
     <span>Name</span>
     <input type="text" name="name" autocomplete="name" required />
   </label>
 
   <label class="required">
+    <span>Email</span>
+    <input type="email" name="email" autocomplete="email" required />
+  </label>
+
+  <label class="required">
     <span>Film title</span>
-    <input type="text" name="name" required />
+    <input type="text" name="film-title" required />
   </label>
 
   <label class="required">
     <span>Genre</span>
-    <select name="genre[]" required>
+    <select name="genre" required>
       <option value="narrative">Narrative</option>
       <option value="documentary">Documentary</option>
       <option value="experimental">Experimental</option>
@@ -28,7 +33,7 @@ eleventyNavigation:
 
   <label class="required">
     <span>Type</span>
-    <select name="role[]" required>
+    <select name="role" required>
       <option value="short">Short</option>
       <option value="feature">Feature</option>
     </select>
