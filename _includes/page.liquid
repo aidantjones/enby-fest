@@ -8,11 +8,12 @@ title: Page
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>
       {{ title }}
-      - Enby Fest
+      - ENBYfest
     </title>
     <link rel="stylesheet" href="/assets/styles/water.css">
     <link rel="stylesheet" href="/assets/styles/main.css">
-    <meta property="og:image" content="/assets/images/logo.png">
+    <meta property="og:title" content="{{ title }}">
+    {% include 'components/global-og' %}
     <meta property="og:description" content="{{ description }}">
   </head>
   <body class="page-{{ title | slugify }} template-page">
