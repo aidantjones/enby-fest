@@ -5,7 +5,7 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({
         "assets": "assets",
         "content/images": "assets/images",
-        "content/images/favicon.ico": "/",
+        "content/images/favicon.ico": ".",
         "./node_modules/water.css/out/light.min.css": "assets/styles/water.css"
     });
 
