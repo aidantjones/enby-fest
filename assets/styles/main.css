@@ -60,6 +60,7 @@ body {
     max-width: unset;
     min-height: 100vh;
     padding: 0;
+    padding-bottom: 2rem;
     text-align: center;
 }
 
