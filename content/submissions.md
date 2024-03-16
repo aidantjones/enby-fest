@@ -47,7 +47,7 @@ eleventyNavigation:
   <div class="field-center">
     <label class="required">
       <span>Film link (Vimeo, YouTube, download link, etc.)</span>
-      <input type="url" name="url" placeholder="https://example.com" pattern="https://.*" required />
+      <input type="text" name="url" placeholder="https://www.example.com" required />
     </label>
     <label>
       <span>Film link password</span>
